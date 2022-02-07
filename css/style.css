@@ -374,9 +374,7 @@ section.main-content .intro-container .role {
     .skills-area {
       padding: 0 5%;
     }
-    nav{
-      font-size: 12px;
-    }
+
 
     section.main-content .intro-container{
       font-size: 9px;
@@ -388,6 +386,14 @@ section.main-content .intro-container .role {
     }
     section.main-content .intro-container{
       font-size: 6px;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .skills-area {
+      padding: 0 5%;
+    }
+    nav{
+      font-size: 13px;
     }
   }
   @media only screen and (max-width: 270px) {

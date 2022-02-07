@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aos-by-red.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -28,13 +30,13 @@
             </nav>
         </header>
     </div>
-    <section class="main-content" id="home">
+    <section class="main-content" id="home" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
         <div class="intro-container">
             <span class="greeting">
-                <i>&#60;</i>
+                <i >&#60;</i>
                 Hello World!
                 <i>&#47;&#62;</i>
-            </span><br />
+            </span><br/>
             <span class="pre-name">My Name is</span>
             <span class="name">Pranay GV</span><br />
             <div class="role-box-container">
@@ -48,8 +50,9 @@
     <!-- ------------------PROJECT-SECTION-FORMATTING--------------------- -->
 
     <section class="projects" id="projects">
-        <br><br><br><h3>PROJECTS</h3><br>
-        <div class="row">
+        <br><br><br>
+        <h3>PROJECTS</h3><br>
+        <div class="row" data-aos="fade-bottom" data-aos-duration="1000" data-aos-once="true">
             <div class="card">
                 <div class="card-header">
                     <h1>Space Walker</h1>
@@ -62,7 +65,8 @@
                         free resources
                         .The game is completely free to play available on Google PlayStore.
                     </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.Pranay.SpaceWalker" class="btn">Install Click Me</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.Pranay.SpaceWalker" class="btn">Install
+                        Click Me</a>
                 </div>
             </div>
             <div class="card">
@@ -117,9 +121,9 @@
     </section>
 
     <!-- ------------------SKILLS-SECTION-FORMATTING--------------------- -->
-    <section class="skills" id="skills">
+    <section class="skills" id="skills" >
         <h1>Skills</h1>
-        <div class="skills-area">
+        <div class="skills-area" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
             <div class="skill">
                 <div class="skill-title">HTML</div>
                 <div class="skill-bar"></div>
@@ -167,21 +171,29 @@
             <p>My Full name is Ganji Venkat Pranay, Im 15years old.<br> I love to learn new things about computer as
                 it is the future.<br> I am learning programming languages C#, Python, Html, CSS, Js, Arduino etc. I
                 made projects using these languages.</p>
-                <br><br>
-        <div class="icons">
-            <div class="icon-discord">
-                <a href="https://discord.gg/FHHkh6Mcxv"><img src="assets/icons/discord.png"/></a>
+            <br><br>
+            <div class="icons" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                <div class="icon-discord">
+                    <a href="https://discord.gg/FHHkh6Mcxv"><img src="assets/icons/discord.png" /></a>
+                </div>
+                <div class="icon-mail">
+                    <a href="mailto:venkatpranay.ganji@gmail.com" target="_blank" ?Subject="Hello, "><img
+                            src="assets/icons/mail.png" /></a>
+                </div>
+                <div class="icon-instagram">
+                    <a href="https://www.instagram.com/pranay_2411/"><img src="assets/icons/instagram.png" /></a>
+                </div>
             </div>
-            <div class="icon-mail">
-                <a href="mailto:venkatpranay.ganji@gmail.com" target="_blank"?Subject="Hello, "><img src="assets/icons/mail.png"/></a>
-            </div>
-            <div class="icon-instagram">
-                <a href="https://www.instagram.com/pranay_2411/"><img src="assets/icons/instagram.png"/></a>
-            </div>
-        </div>
-        <br><br>
-                
+            <br><br>
+
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: true,
+        });
+    </script>
     <footer>
         <span>Created By <a href="#">PranayGv</a> | <span>@</span> 2022 All rights
             reserved</span><br>
@@ -190,7 +202,7 @@
             <a href="https://discord.gg/myG4PVfX"><i class="uil uil-discord"></i></a>
         </div>
     </footer>
-    
+
 
 
 
