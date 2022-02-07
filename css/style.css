@@ -43,7 +43,7 @@ header nav ul :hover{
 }
 header nav ul li {
     display: inline-block;
-    padding: 0 0.4em;
+    padding: 0 0.3em;
 }
 header nav ul li a {
     text-decoration: none;
@@ -55,7 +55,7 @@ section.main-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(../assets/images/main-bg.jpg);
+    background: url(../assets/images/main-bg-blur.png);
     background-size: cover;
     color: #fff;
 }
