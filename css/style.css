@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: #008080fa;
+} 
+
+body .navbar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+header span.logo {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.356)
+}
+header nav ul {
+    list-style-type: none;
+    border-radius: 10px;
+}
+header nav ul :hover{
+  border-radius: 10px;
+  background-color: #28a191;
+  border-radius: 10px;
+  transition: .2s;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0 0.4em;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+section.main-content {
+    min-height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/images/main-bg.jpg);
+    background-size: cover;
+    color: #fff;
+}
+section.main-content .intro-container .greeting{
+    font-size: 3em;
+    color: #008080;
+    text-shadow: 1px 0px rgb(24, 175, 155);
+}
+section.main-content .intro-container .greeting i {
+    font-size: 1em;
+    color: #FEC260
+}
+section.main-content .intro-container .pre-name {
+    vertical-align: top;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.63);
+}
+section.main-content .intro-container .name {
+    font-size: 7em;
+    font-weight: bold;
+    padding-left: 0.25em;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    -moz-box-reflect: below 1px linear-gradient(transparent, #0008);
+    animation: glow 1s linear normal;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4;
+}
+section.main-content .intro-container .role-box-container {
+    margin-left: 9em;
+}
+section.main-content .intro-container .pre-role {
+    font-size: 2em;
+}
+section.main-content .intro-container .role {
+    padding-left: 0.25em;
+    font-size: 2em;
+    color: #008080;
+    text-shadow: 1px 0px rgb(24, 175, 155);
+}
+.role > .txt {
+    border-right: 0.2rem solid #A12568;
+    animation: blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+
+
+
+@keyframes glow {
+   0%, 40%, 80% {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    20%, 60%, 100% {
+        color: #FFFFFF;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255,255,255 .8);
+    }
+    to {
+      border-right-color: transparent;
+    }
+}
+
+/* Scrollbar Styles */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #219F94 lightgrey;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: lightgrey;
+    border-radius: 1em;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #219F94;
+    border: 3px solid lightgrey;
+    border-radius: 1em;
+  }
+
+  /* ----------------------------------------------------------PROJECT SECTION STYLING-------------------------------------------------------- */
+
+
+.projects{
+    background-color: #401e7c;
+}
+
+.projects h3{
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 3px 0px #2f2f2f;
+    color: #d6d2e8;
+}
+
+.skills{
+    background-color: #552a99;
+}
+
+.about{
+    background-color: #6331a1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(#219F94,#219F94);
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 15px;
+
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #f8d7a1, #ffdba0);
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 0px;
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+  .skills-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+  }
+
+  .skills h1{
+    text-shadow: 3px 0px #2f2f2f;
+    text-align: center;
+    font-size: 80px;
+    color: #d6d2e8;
+}
+  
+  .skill {
+    position: relative;
+    margin-bottom: 40px;
+    
+  }
+  
+  .skill-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    text-shadow: 3px 0px #2f2f2f;
+  }
+  
+  .skill-bar {
+    width: 100%;
+    background: #ffffff32;
+    height: 40px;
+    z-index: 1;
+    border-radius: 100px;
+    position: absolute;
+  }
+  
+  .skill-fill {
+    background: #219F94;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+  }
+  
+  .skill-percent {
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 0px #525252;
+  }
+  
+  .html {
+    animation: HTML 2s;
+    width: 70%;
+  }
+  
+  .css {
+    animation: CSS 2s;
+    width: 65%;
+  }
+  
+  .Python {
+    animation: Python 2s;
+    width: 60%;
+  }
+  
+  .Csharp {
+    animation: Csharp 2s;
+    width: 50%;
+  }
+
+  .Blender {
+    animation: Blender 2s;
+    width: 50%;
+  }
+  @keyframes HTML {
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
+  }
+  
+  @keyframes CSS {
+    from {
+      width: 0;
+    }
+    to {
+      width: 65%;
+    }
+  }
+  
+  @keyframes Python {
+    from {
+      width: 0;
+    }
+    to {
+      width: 60%;
+    }
+  }
+
+  @keyframes Csharp {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+
+    @keyframes Blender {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    .skills-area {
+      padding: 0 5%;
+    }
+    section.main-content .intro-container{
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 470px) {
+    .skills-area {
+      padding: 0 5%;
+    }
+    section.main-content .intro-container{
+      font-size: 8px;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .skills-area {
+      padding: 0 5%;
+    }
+    nav{
+      font-size: 12px;
+    }
+
+    section.main-content .intro-container{
+      font-size: 9px;
+    }
+  }
+  @media only screen and (max-width: 330px) {
+    .skills-area {
+      padding: 0 5%;
+    }
+    section.main-content .intro-container{
+      font-size: 6px;
+    }
+  }
+  @media only screen and (max-width: 270px) {
+    .skills-area {
+      padding: 0 5%;
+    }
+    .navbar header span{
+      font-size: 5px;
+    }
+  }
+  @media only screen and (max-width: 385px) {
+    .skills-area {
+      padding: 0 5%;
+    }
+    .navbar header span{
+      font-size: 8px;
+    }
+  }
+
+  .about h1{
+        color: aliceblue;
+        text-align: center;
+        font-size: 60px;
+        text-shadow: 3px 0px #2f2f2f;
+  }
+
+  .about p{
+      text-align: center;
+      color:#fff;
+  }
+
+  .about .icons{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .about .icons img{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* footer section styling */
+footer{
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgb(48, 48, 48), rgb(29, 29, 29));
+  padding: 20px 23px;
+  color: white;
+  text-align: center;
+}
+
+footer span a{
+  color: #6332f6;
+  text-decoration: none;
+}
+
+footer span a:hover{
+  text-decoration: underline;
+}
+
+footer .icons a{
+  color: aliceblue;
+}
