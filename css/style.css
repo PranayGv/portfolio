@@ -240,6 +240,11 @@ section.main-content .intro-container .role {
     padding: 0 20%;
   }
 
+  .skills-area .skill-bar:hover{
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.246);
+  }
+
   .skills h1{
     text-shadow: 3px 0px #2f2f2f;
     text-align: center;
@@ -269,7 +274,7 @@ section.main-content .intro-container .role {
     position: absolute;
   }
   
-  .skill-fill {
+  .skill-fill{
     background: #219F94;
     height: 40px;
     border-radius: 100px;
@@ -278,9 +283,10 @@ section.main-content .intro-container .role {
     align-items: center;
     padding-right: 30px;
     overflow: hidden;
-  }
+    z-index: 1000;
+    }
   
-  .skill-percent {
+  .skill-percent{
     font-size: 30px;
     color: white;
     text-shadow: 2px 0px #525252;
@@ -412,7 +418,6 @@ section.main-content .intro-container .role {
       font-size: 8px;
     }
   }
-
   .about h1{
         color: aliceblue;
         text-align: center;
@@ -423,8 +428,8 @@ section.main-content .intro-container .role {
   .about p{
       text-align: center;
       color:#fff;
+      font-size:20px;
   }
-
   .about .icons{
     display: flex;
     align-items: center;
