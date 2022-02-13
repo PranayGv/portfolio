@@ -1,4 +1,5 @@
 # import the necessary packages
+from ast import While
 from keras.applications.mobilenet_v2 import preprocess_input
 from keras.preprocessing.image import img_to_array
 from keras.models import load_model
@@ -8,6 +9,8 @@ import imutils
 import time
 import cv2
 import os
+
+from pip import main
 from Talk import talk
 
 def detect_and_predict_mask(frame, faceNet, maskNet):
@@ -127,6 +130,5 @@ def main():
 	# show the output frame
 	cv2.imshow("Frame", frame)
 	key = cv2.waitKey(1) & 0xFF
-
-main()
 # do a bit of cleanup
+main()
