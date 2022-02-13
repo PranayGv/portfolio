@@ -1,0 +1,645 @@
+{
+    "intents": [
+        {
+            "tag": "switchtab",
+            "patterns": [
+                "switch tab",
+                "alt tab"
+            ],
+            "responses": [
+                "switchtab"
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "what is the time now",
+                "time",
+                "whats the time now",
+                "time now"
+            ],
+            "responses": [
+                "time"
+            ]
+        },
+        {
+            "tag": "day",
+            "patterns": [
+                "what day is today",
+                "day",
+                "tell me the day of today",
+                "today"
+            ],
+            "responses": [
+                "day"
+            ]
+        },
+        {
+            "tag": "fact",
+            "patterns": [
+                "tell me a fact",
+                "todays fact",
+                "fact",
+                "tell me a useful fact"
+            ],
+            "responses": [
+                "fact"
+            ]
+        },
+        {
+            "tag": "date",
+            "patterns": [
+                "what is the date today",
+                "date",
+                "what is todays date",
+                "date of today"
+            ],
+            "responses": [
+                "date"
+            ]
+        },
+        {
+            "tag": "wikipedia",
+            "patterns": [
+                "who is",
+                "what is",
+                "tell me about",
+                "tell me some",
+                "about",
+                "wikipedia",
+                "search on google",
+                "what is the",
+                "what is a",
+                "what are called",
+                "how to",
+                "when did",
+                "why will",
+                "what is the meaning of",
+                "meaning of",
+                "will",
+                "name some",
+                "find",
+                "get",
+                "address",
+                "height of",
+                "weight of",
+                "length of",
+                "bredth of"
+            ],
+            "responses": [
+                "wikipedia"
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "tell me a joke",
+                "joke",
+                "jokes",
+                "tell me a meme",
+                "meme"
+            ],
+            "responses": [
+                "joke"
+            ]
+        },
+        {
+            "tag": "youtube",
+            "patterns": [
+                "youtube search",
+                "search on youtube",
+                "play",
+                "play on youtube"
+            ],
+            "responses": [
+                "youtube"
+            ]
+        },
+        {
+            "tag": "calculate",
+            "patterns": [
+                "calculate",
+                "add",
+                "multiply",
+                "divide",
+                "cube",
+                "square",
+                "what is +",
+                "what is *"
+            ],
+            "responses": [
+                "calculate"
+            ]
+        },
+        {
+            "tag": "flipacoin",
+            "patterns": [
+                "flip coin",
+                "heads or tails",
+                "tails or heads"
+            ],
+            "responses": [
+                "flipacoin"
+            ]
+        },
+        {
+            "tag": "discord",
+            "patterns": [
+                "discord",
+                "discord.exe",
+                "open discord"
+            ],
+            "responses": [
+                "discord"
+            ]
+        },
+        {
+            "tag": "OpenCmd",
+            "patterns": [
+                "open command prompt",
+                "open CMD",
+                "open terminal",
+                "open powershell",
+                "command prompt"
+            ],
+            "responses": [
+                "cmd"
+            ]
+        },
+        {
+            "tag": "OpenGoogle",
+            "patterns": [
+                "open Google",
+                "open browser",
+                "google.com",
+                "can you open google"
+            ],
+            "responses": [
+                "opengoogle"
+            ]
+        },
+        {
+            "tag": "CloseApp",
+            "patterns": [
+                "close this application",
+                "close this app",
+                "close"
+            ],
+            "responses": [
+                "closeapp"
+            ]
+        },
+        {
+            "tag": "camera",
+            "patterns": [
+                "open camera",
+                "open webcam",
+                "camera",
+                "show me on screen"
+            ],
+            "responses": [
+                "camera"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "tell news",
+                "todays news",
+                "whats happening on thw world",
+                "google news",
+                "current affairs",
+                "hot topics"
+            ],
+            "responses": [
+                "news"
+            ]
+        },
+        {
+            "tag": "internetspeed",
+            "patterns": [
+                "check my wifi speed",
+                "test my internet speed",
+                "internet speed test",
+                "whats my ping",
+                "how fast is my internet"
+            ],
+            "responses": [
+                "internetspeed"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "weather report",
+                "weather outside",
+                "weather today",
+                "hows the weather outside",
+                "is it raining outside",
+                "is it sunny outside",
+                "temperature outside",
+                "is it cool outside",
+                "weather after hours",
+                "how will weather be after hours",
+                "how will be the temperature after hours",
+                "how will weather be after days",
+                "how will be the temperature after days",
+                "will it rain after days",
+                "will it rain tomorrow",    
+                "will it be sunny tomorrow",
+                "how will be the weather tomorrow",
+                "temperature tomorrow"
+            ],
+            "responses": [
+                "weather"
+            ]
+        },
+        {
+            "tag": "OpenYoutube",
+            "patterns": [
+                "open Youtube",
+                "youtube.com",
+                "youtube"
+            ],
+            "responses": [
+                "openyoutube"
+            ]
+        },
+        {
+            "tag": "OpenInstagram",
+            "patterns": [
+                "open instagram",
+                "instagram.com",
+                "instagram"
+            ],
+            "responses": [
+                "openinstagram"
+            ]
+        },
+
+
+
+
+
+
+        {
+            "tag": "hi",
+            "patterns": [
+                "hi",
+                "hey",
+                "hai",
+                "hello",
+                "hey"
+            ],
+            "responses": [
+                "hello there, whats going on",
+                "Hey, whats up",
+                "hello bro how are you"
+            ]
+        },
+        {
+            "tag": "howareyou",
+            "patterns": [
+                "how are you",
+                "is everything good",
+                "hows your health",
+                "are you fine",
+                "is everything ok"
+            ],
+            "responses": [
+                "pretty good, what about you?",
+                "i am absolutly fine, how are you",
+                "My system is working pretty well, what about you"
+            ]
+        },
+        {
+            "tag": "how_are_you_reply",
+            "patterns": [
+                "i am good what about you",
+                "not bad what about you",
+                "pretty good what bout you",
+                "mood of what about you",
+                "i am ok what about you"
+            ],
+            "responses": [
+                "pretty good",
+                "not bad"
+            ]
+        },
+        {
+            "tag": "whats_up",
+            "patterns": [
+                "whats up",
+                "whats going on",
+                "how is it going",
+                "what are you doing"
+            ],
+            "responses": [
+                "This world is a awesome place, i am learning new things",
+                "i am learning alot from you.",
+                "nothing fancy"
+            ]
+        },
+        {
+            "tag": "nothing_much_what_about_you",
+            "patterns": [
+                "working on what about you",
+                "learning a lot what about you",
+                "trying to what about you",
+                "talking to you about you",
+                "nothing much what about you"
+            ],
+            "responses": [
+                "This world is a awesome place, i am learning new things",
+                "i am learning alot from you.",
+                "nothing fancy"
+            ]
+        },
+        {
+            "tag": "what_do_you_think_+",
+            "patterns": [
+                "what do you think about humans",
+                "what do you think about artificial intelligence",
+                "what do you think about robots",
+                "what do you think about animals",
+                "what do you think about trees",
+                "what do you think about computer"
+            ],
+            "responses": [
+                "as far as they do good to earth, they are cool",
+                "if they dont do harm the environment i wd support them",
+                "if they are trying to help to make world better place to live in i love them"
+            ]
+        },
+        {
+            "tag": "how_can_i_help_you",
+            "patterns": [
+                "how can i help you",
+                "what can i do to help you",
+                "is there anything that i can do to help you"
+            ],
+            "responses": [
+                "Thanks for asking, but nothing",
+                "Thats so nice of you, i can handle",
+                "i dont require help thanks for asking tho"
+            ]
+        },
+        {
+            "tag": "hi_reply+",
+            "patterns": [
+                "nothing much",
+                "working on",
+                "learning a lot",
+                "trying to",
+                "talking to you"
+            ],
+            "responses": [
+                "oh! cool",
+                "thats so nice to hear, keep going",
+                "wow! great sir"
+            ]
+        },
+        {
+            "tag": "hi_reply-",
+            "patterns": [
+                "going through touch times",
+                "i am sad",
+                "my health is bad",
+                "i dont have enough money",
+                "i am depressed",
+                "life is going bad"
+            ],
+            "responses": [
+                "Its ok, you will recover",
+                "This happens to everyone at a point of life",
+                "Take a deep breath, it will be ok"
+            ]
+        },
+        {
+            "tag": "how_are_you_reply+",
+            "patterns": [
+                "i am fine",
+                "i am healthy",
+                "i am ok",
+                "i am alright",
+                "i am so happy"
+            ],
+            "responses": [
+                "cool, keep going",
+                "thats so refreshing to hear",
+                "wow, cool"
+            ]
+        },
+        {
+            "tag": "how_are_you_reply",
+            "patterns": [
+                "not so good",
+                "i am devestated"
+            ],
+            "responses": [
+                "you will be ok sir",
+                "it happens to everyone all will be ok chill",
+                "take some rest sir"
+            ]
+        },
+        {
+            "tag": "your_name",
+            "patterns": [
+                "what is your name",
+                "whats your name",
+                "introduce yourself",
+                "who are you",
+                "may i know your name",
+                "tell me your name"
+            ],
+            "responses": [
+                "i am not named yet",
+                "I dont have a name"
+            ]
+        },
+        {
+            "tag": "basic",
+            "patterns": [
+                "ok",
+                "hmm",
+                "k"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "thank_you",
+            "patterns": [
+                "thank you",
+                "thanks",
+                "tysm",
+                "thank you so much",
+                "nice information"
+            ],
+            "responses": [
+                "anytime welcome",
+                "always for you"
+            ]
+        },
+        {
+            "tag": "whomadeyou",
+            "patterns": [
+                "what is the name of your boss",
+                "who made you",
+                "who invented you",
+                "how are you made",
+                "name of your owner",
+                "what language you are you made of"
+            ],
+            "responses": [
+                "I was coded by Pranay sir with python language"
+            ]
+        },
+        {
+            "tag": "welcome",
+            "patterns": [
+                "welcome",
+                "Its ok",
+                "alright"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "ikr",
+            "patterns": [
+                "ikr",
+                "i know right",
+                "i already know that"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "yes",
+            "patterns": [
+                "are you made by pranay",
+                "are you artificial intelligence",
+                "do you like humans"
+            ],
+            "responses": [
+                "yes"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "will you destroy world",
+                "will you kill all humans"
+            ],
+            "responses": [
+                "no"
+            ]
+        },
+        {
+            "tag": "can_you_do_anything",
+            "patterns": [
+                "can you do anything",
+                "can you do everything"
+            ],
+            "responses": [
+                "not exactly, i have some limitations"
+            ]
+        },
+        {
+            "tag": "god",
+            "patterns": [
+                "do you believe in god",
+                "can you believe in magic",
+                "which zodiac sign are you"
+            ],
+            "responses": [
+                "being a robot i believe in science so i cant exactly tell you but you get that "
+            ]
+        },
+        {
+            "tag": "when_did_you_born",
+            "patterns": [
+                "when did you born",
+                "your birthday",
+                "your age"
+            ],
+            "responses": [
+                "hmm i was first runned on 26th january 2022"
+            ]
+        },
+        {
+            "tag": "tell_me_about_your_owner",
+            "patterns": [
+                "tell me about you boss",
+                "tell me about your owner",
+                "facts about your owner",
+                "what does your boss do",
+                "what does your owner do"
+            ],
+            "responses": [
+                "My boss pranay is a learning programmer. he does a lot of projects with programming languages"
+            ]
+        },
+        {
+            "tag": "complement",
+            "patterns": [
+                "smart",
+                "good",
+                "nice",
+                "wow",
+                "cool"
+            ],
+            "responses": [
+                "thank you"
+            ]
+        },
+        {
+            "tag": "do_you_know_alexa",
+            "patterns": [
+                "do you know alexa",
+                "do you know siri",
+                "what do you think about alexa",
+                "what do you think about siri"
+            ],
+            "responses": [
+                "Yea i know her, she is my friend"
+            ]
+        },
+        {
+            "tag": "idiot",
+            "patterns": [
+                "idiot",
+                "you suck",
+                "bad",
+                "you dont know anything",
+                "fuck",
+                "bitch",
+                "dumb",
+                "shit"
+            ],
+            "responses": [
+                "sorry if i messed up i am still learning"
+            ]
+        },
+        {
+            "tag": "AboutMe",
+            "patterns": [
+                "who am i",
+                "do you know me",
+                "whats my name",
+                "what is my name",
+                "what is your height",
+                "what is your weight",
+                "what is my weight",
+                "what is my height"
+            ],
+            "responses": [
+                "that seems like a silly question to me"
+            ]
+        }
+    ]
+}
