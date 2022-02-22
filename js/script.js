@@ -52,10 +52,6 @@ class TypeWriter {
   }
 }
 
-
-// Init On DOM Load
-// document.addEventListener('DOMContentLoaded', );
-
 // Init App
 function init() {
   const txtElement = document.querySelector('#roleTypeWriter');
@@ -88,10 +84,17 @@ let calcScrollValue = () => {
   });
   scrollProgress.style.background = `conic-gradient(#006c6c ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 }
+let sections = document.querySelectorAll('section');
+let links = document.querySelectorAll('.nav-link-item');
+let navMenuActive = () => {
+  let sectionsCount = sections.length;
+  while (--sectionsCount && window.scrollY +150 < sections[sectionsCount].offsetTop){}
+  links.forEach(link => link.classList.remove('active'));
+  links[sectionsCount].classList.add('active');
+}
+window.onscroll = function () { calcScrollValue(),navMenuActive() };
 
-window.onscroll = function () { calcScrollValue() };
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
   init();
 
@@ -108,22 +111,22 @@ document.addEventListener("DOMContentLoaded", function() {
   ScrollTrigger.create(
     {
       trigger: ".skills",
-      onEnter: function () {startSkillsAnimations('.skills')},
-      onEnterBack: function () {startSkillsAnimations('.skills')},
-      onLeave: function () {stopSkillsAnimations('.skills')}, 
-      onLeaveBack: function (){stopSkillsAnimations('.skills')}
+      onEnter: function () { startSkillsAnimations('.skills') },
+      onEnterBack: function () { startSkillsAnimations('.skills') },
+      onLeave: function () { stopSkillsAnimations('.skills') },
+      onLeaveBack: function () { stopSkillsAnimations('.skills') }
     }
   );
-  gsap.utils.toArray('.reveal').forEach(function(elem) {
+  gsap.utils.toArray('.reveal').forEach(function (elem) {
     hide(elem); // assure that the element is hidden when scrolled into view
 
     // Scroll Trigger Slide Reveal Animation
     ScrollTrigger.create({
       trigger: elem,
-      onEnter: function() { gsapSlideRevealAnimation(elem) },
-      onEnterBack: function() { gsapSlideRevealAnimation(elem, -1) },
-      onLeave: function() { hide(elem) }, // assure that the element is hidden when scrolled into view
-      onLeaveBack: function() { hide(elem) } // assure that the element is hidden when scrolled into view
+      onEnter: function () { gsapSlideRevealAnimation(elem) },
+      onEnterBack: function () { gsapSlideRevealAnimation(elem, -1) },
+      onLeave: function () { hide(elem) }, // assure that the element is hidden when scrolled into view
+      onLeaveBack: function () { hide(elem) } // assure that the element is hidden when scrolled into view
     });
   });
 
@@ -148,48 +151,12 @@ let stopSkillsAnimations = (elem) => {
   document.querySelector('.Blender').classList.remove('animate');
 }
 
-// // GSAP Reveal Animation Function
-function gsapSlideRevealAnimation(elem, direction) {
-  direction = direction || 1;
-  var x = 0, y = direction * 200;
-  unHide(elem);
-
-  if(elem.classList.contains("reveal-fromTop")) {
-    x = 0;
-    y = -100;
-  }
-  else if(elem.classList.contains("reveal-fromBottom")) {
-    x = 0;
-    y = 100;
-  }
-  else if(elem.classList.contains("reveal-fromLeft")) {
-    x = -100;
-    y = 0;
-  }
-  else if (elem.classList.contains("reveal-fromRight")) {
-    x = 100;
-    y = 0;
-  }
-  elem.style.transform = "translate(" + x + "px, " + y + "px)";
-  elem.style.opacity = "0";
-  gsap.fromTo(elem, {x: x, y: y, autoAlpha: 0}, {
-    duration: 1,
-    x: 0,
-    y: 0,
-    autoAlpha: 1,
-    ease: "expo",
-    overwrite: "auto"
-  });
-
-  document.querySelector('.html').classList.toggle('animate');
-}
-
 // Hide Element for GSAP Animation
 let hide = (elem) => {
-  gsap.set(elem, {autoAlpha: 0});
+  gsap.set(elem, { autoAlpha: 0 });
 }
 
 // UnHide Element for GSAP Animation
 let unHide = (elem) => {
-  gsap.set(elem, {autoAlpha: 1});
+  gsap.set(elem, { autoAlpha: 1 });
 }
