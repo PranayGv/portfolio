@@ -127,8 +127,6 @@ section.main-content .intro-container .name {
     font-size: 7em;
     font-weight: 700;
     padding-left: .25em;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-    -moz-box-reflect: below 1px linear-gradient(transparent, #0008);
     animation: glow 1s linear normal;
     animation: zoomin 0.5s linear normal;
     text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4;
