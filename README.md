@@ -8,8 +8,10 @@
 Python            : ⭐⭐⭐** <br />
 Html              : ⭐⭐⭐⭐* <br />
 CSS               : ⭐⭐⭐**  <br />
-Cyber Security    : ⭐⭐*** <br />
 SQL               : ⭐⭐⭐** <br />
+Cyber Security    : ⭐⭐*** <br />
+Java              : ⭐⭐*** <br />
+c#                : ⭐⭐***
 
 # Language
 
