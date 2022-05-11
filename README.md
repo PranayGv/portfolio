@@ -7,7 +7,7 @@
 
 Html              : ⭐⭐⭐⭐* <br />
 Python            : ⭐⭐⭐** <br />
-JS                : ⭐⭐⭐** <br />
+JS /  Jquery      : ⭐⭐⭐** <br />
 CSS               : ⭐⭐⭐**  <br />
 SQL               : ⭐⭐⭐** <br />
 Cyber Security    : ⭐⭐*** <br />
